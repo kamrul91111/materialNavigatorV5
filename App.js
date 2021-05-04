@@ -12,14 +12,15 @@ import Bed from './Screens/Bed';
 
 
 
+
 const Tab = createMaterialBottomTabNavigator();
 
 function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="Home"
-        inactiveColor="purple"
+        initialRouteName="Nice"
+        //activeColor="purple"
         barStyle={{ backgroundColor: "black" }}
         shifting={true}
       >
@@ -27,18 +28,18 @@ function App() {
           name="HomeScreen"
           component={Home}
           options={{
-            tabBarLabel: "Home",
+            tabBarLabel: "Barking",
             tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="home" color='red' size={26} />
+              <MaterialCommunityIcons name="abjad-arabic" color='red' size={26} />
             ),
             
           }}
         />
         <Tab.Screen
-          name="Home"
+          name="Nice"
           component={SecondScreen}
           options={{
-            tabBarLabel: "BedBananas",
+            tabBarLabel: "?",
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons name="dog" color='green' size={26} />
             ),
@@ -48,9 +49,9 @@ function App() {
           name="Leave"
           component={Bed}
           options={{
-            tabBarLabel: "You is leaving bruv",
+            tabBarLabel: "Leaving",
             tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="material-design" color='blue' size={26} />
+              <MaterialCommunityIcons name="material-design" color='yellow' size={26} />
             ),
           }}
         />

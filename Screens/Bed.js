@@ -5,7 +5,7 @@ const Bed = () => {
   return (
     <ScrollView style={{ backgroundColor: "black" }}>
       <View style={styles.container}>
-        <Text style={styles.heading}>Bed Banans</Text>
+        <Text style={styles.heading}>Hello</Text>
       </View>
     </ScrollView>
   );
